@@ -1,0 +1,71 @@
+/Connor Rinaldo
+ORG 100
+input 
+Skipcond 800
+halt
+output
+store a 
+
+input 
+Skipcond 800
+halt
+output
+store b
+
+input 
+Skipcond 800
+halt
+output
+store c 
+
+input 
+Skipcond 800
+halt
+output
+store d
+store x
+load c
+store y
+jns multiple
+
+load z 
+store c
+load y
+store z
+load a 
+store x
+load b 
+store y
+jns multiple
+
+load z 
+store x
+load y
+store z
+load c 
+store y
+jns multiple
+load z
+output 
+halt
+
+a, DEC 0
+b, DEC 0
+c, DEC 0
+d, DEC 0
+o, DEC 1
+x, DEC 0
+y, DEC 0
+z, DEC 0
+
+multiple, hex 0
+	here, load x 
+	add z
+	store z
+	load y 
+	subt o
+	store y
+	skipcond 400
+	jump here
+	jumpi multiple
+	end

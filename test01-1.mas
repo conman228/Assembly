@@ -1,0 +1,43 @@
+/Connor Rinaldo
+ORG 100
+input 
+Skipcond 800
+halt
+output
+store a 
+input 
+Skipcond 800
+halt
+output
+store b
+input 
+Skipcond 800
+halt
+output
+store c  
+here, load a 
+add d
+store d
+load b 
+subt o
+store b
+skipcond 400
+jump here
+store a
+here2, load d
+add a
+store a
+load c 
+subt o
+store c
+skipcond 400
+jump here2
+load a
+output
+halt
+
+a, DEC 0
+b, DEC 0
+c, DEC 0
+d, DEC 0
+o, DEC 1
